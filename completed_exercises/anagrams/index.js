@@ -9,7 +9,6 @@
 //   anagrams('Hi there', 'Bye there') --> False
 
 function anagrams(stringA, stringB) {
-  // test comment
   return cleanString(stringA) === cleanString(stringB);
 }
 
