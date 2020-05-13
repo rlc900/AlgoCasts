@@ -9,7 +9,6 @@
 //   fib(4) === 3
 
 function fib(n) {
-  // let counter = 0
   let arr = [0, 1]
   for (let i = 2; i <= n; i++) {
     let a = arr[i - 1]
