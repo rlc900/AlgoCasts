@@ -8,16 +8,18 @@
 //   palindrome("abcdefg") === false
 
 function palindrome(str) {
-  strArray = str.split('')
-  reversedStr = strArray.reverse()
-  newString = reversedStr.join('')
-  if (str === newString) {
-    return true
-  } else {
-    return false
-  }
+   
+    reversedStr = str.split('').reverse().join('')
+    if (str === reversedStr) {
+      return true
+    } else {
+      return false
+    }
 
-
+      
+    // cleaner solution:
+    // reversedStr = str.split('').reverse().join('')
+    // return str === reversedStr
 }
 
 module.exports = palindrome;
